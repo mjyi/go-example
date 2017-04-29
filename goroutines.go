@@ -14,6 +14,7 @@ func main() {
 
 	go f("goroutine")
 
+	// 你为匿名函数启动一个 Go 协程。
 	go func(msg string) {
 		fmt.Println(msg)
 	}("going")
